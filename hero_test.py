@@ -288,6 +288,7 @@ def test_team_remove_hero():
     team.add_hero(jodie)
     assert team.heroes[0].name == "Jodie Foster"
     team.remove_hero("Jodie Foster")
+    print(len(team.heroes))
     assert len(team.heroes) == 0
 
 def test_team_remove_unlisted():

@@ -1,5 +1,7 @@
 import random
 
+#integer division in weapon
+
 class Hero:
 	def __init__(self, name, health=100):
 		self.name = name
@@ -54,14 +56,14 @@ class Abilities:
 
 	def attack(self):
 		low = self.strength // 2
-		return random.randint(low, self.strength)
+		return random.randint(0, self.strength)
 
 	def update_attack(self, attack_strength):
 		self.strength = attack_strength
 
 class Weapon(Abilities):
 	def attack(self):
-		return random.randint(0, self.strength)
+		return random.randint(self.strength//2, self.strength)
 
 
 class Team:
@@ -73,7 +75,31 @@ class Team:
 		self.heroes.append(Hero)
 
 	def remove_hero(self, name):
-		self.heroes.remove(name)
+		# 1. loop through the list of Heroes
+		# 2. look at each one, and compare
+		# 3. if the name == Hero.name
+		# 4. then if it does match, remove it
+		print("hey")
+		if not len(self.heroes) > 0:
+			return 0
+
+		else:
+			for hero in self.heroes:
+				if hero.name == name:
+					self.heroes.remove(hero)
+				else:
+					return 0
+
+
+
+
+				# self.heroes.remove[i]
+
+		# if len(self.heroes) > 0:
+		# 	# print("YOLO!!!!!!!")
+		# 	print(self.heroes)
+		# 	self.heroes.remove(name)
+		# 	return self.heroes
 
 	def find_hero(self, name):
 		for i in self.heroes:
@@ -202,14 +228,16 @@ class Arena:
 			self.team_one.revive_heroes()
 			self.team_two.revive_heroes()
 			game_loop(self)
+#
+# arena = Arena()
+# arena.build_team_one()
+# arena.build_team_two()
 
-arena = Arena()
-arena.build_team_one()
-arena.build_team_two()
+
 
 def game_loop(arena):
 	arena.team_battle()
 	arena.show_stats()
 	arena.play_again()
 
-game_loop(arena)
+# game_loop(arena)
