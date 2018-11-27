@@ -47,7 +47,7 @@ class Armor:
 		self.defense = defense
 
 	def defend(self):
-		return random.randint(0, defense)
+		return random.randint(0, self.defense)
 
 class Abilities:
 	def __init__(self, name, strength):

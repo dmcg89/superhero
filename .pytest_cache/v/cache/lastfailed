@@ -1,13 +1,3 @@
 {
-  "team_test.py::test_dead_hero_defense": true, 
-  "team_test.py::test_hero_defend_multi_armor": true, 
-  "team_test.py::test_hero_defense": true, 
-  "team_test.py::test_hero_defense_mean_value": true, 
-  "team_test.py::test_hero_defense_standard_deviation": true, 
-  "team_test.py::test_hero_equip_armor": true, 
-  "team_test.py::test_revive_heroes": true, 
-  "team_test.py::test_team_attack": true, 
-  "team_test.py::test_team_attack_deaths": true, 
-  "team_test.py::test_team_attack_kills": true, 
   "tests.py": true
 }
