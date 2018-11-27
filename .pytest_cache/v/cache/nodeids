@@ -1,0 +1,16 @@
+[
+  "team_test.py::test_armor", 
+  "team_test.py::test_hero_default_health", 
+  "team_test.py::test_hero_init_new_health", 
+  "team_test.py::test_hero_start_health", 
+  "team_test.py::test_hero_defense", 
+  "team_test.py::test_hero_defense_mean_value", 
+  "team_test.py::test_hero_defense_standard_deviation", 
+  "team_test.py::test_dead_hero_defense", 
+  "team_test.py::test_hero_equip_armor", 
+  "team_test.py::test_hero_defend_multi_armor", 
+  "team_test.py::test_team_attack", 
+  "team_test.py::test_team_attack_kills", 
+  "team_test.py::test_team_attack_deaths", 
+  "team_test.py::test_revive_heroes"
+]

@@ -13,6 +13,9 @@ class Hero:
 	def add_ability(self, ability):
 		self.abilities.append(ability)
 
+	def add_armor(self, armor):
+		self.armors.append(armor);
+
 	def attack(self):
 		total = 0
 		for i in self.abilities:
@@ -53,7 +56,7 @@ class Abilities:
 		low = self.strength // 2
 		return random.randint(low, self.strength)
 
-	def update_attack(self, attack_strenght):
+	def update_attack(self, attack_strength):
 		self.strength = attack_strength
 
 class Weapon(Abilities):

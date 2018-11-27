@@ -1,0 +1,15 @@
+{
+  "hero_test.py::test_hero_ability_attack_mean_value": true, 
+  "hero_test.py::test_hero_weapon_attack_mean_value": true, 
+  "hero_test.py::test_team_remove_hero": true, 
+  "hero_test.py::test_team_remove_unlisted": true, 
+  "hero_test.py::test_weapon_attack": true, 
+  "team_test.py::test_hero_defend_multi_armor": true, 
+  "team_test.py::test_hero_defense": true, 
+  "team_test.py::test_hero_defense_mean_value": true, 
+  "team_test.py::test_hero_defense_standard_deviation": true, 
+  "team_test.py::test_team_attack": true, 
+  "team_test.py::test_team_attack_deaths": true, 
+  "team_test.py::test_team_attack_kills": true, 
+  "tests.py": true
+}
